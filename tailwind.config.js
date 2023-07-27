@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
+  css: ['~/styles/globals.css'],
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./node_modules/react-tailwindcss-datepicker/dist/index.esm.js",
   ],
   theme: {
     extend: {
@@ -12,7 +15,12 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      gridTemplateColumns: {
+        sidebar: "300px auto", //for sidebar layout
+        "sidebar-collapsed": "64px auto", //for collapsed sidebar layout
+      },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animated'), require('@tailwindcss/aspect-ratio'),],
+  
 }
