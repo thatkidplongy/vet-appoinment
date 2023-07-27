@@ -4,7 +4,6 @@ import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import { VetsModel } from "@/interface/vets";
 import Image from "next/image";
 import { UserIcon } from "@heroicons/react/24/outline";
-import { Veterinary } from "../interface/appointments";
 
 type SelectVetinaryProps = {
   vets: VetsModel[];

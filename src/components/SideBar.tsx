@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { TabsModel } from "@/interface/tabs";
-import { leftSideBarArrow, logo, rightSideBarArrow, vector } from "@/assets";
+import { leftSideBarArrow, logo, rightSideBarArrow } from "@/assets";
 
 type SideBarProps = {
   tabs: TabsModel[];

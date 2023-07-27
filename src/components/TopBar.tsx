@@ -23,16 +23,6 @@ type TopBarProps = {
 const TopBar = (props: TopBarProps) => {
   const { isMinimized } = props;
   const [searchTerm, setSearchTerm] = useState<string>("");
-  const { appointments } = useEventReducer();
-
-  // const handleSuggestionClick = (date: Date) => {
-  //   setSuggestedDate(date);
-  // };
-
-  // // Function to reset the suggestion
-  // const resetSuggestion = () => {
-  //   setSuggestedDate(null);
-  // };
 
   return (
     <div className="flex flex-col">

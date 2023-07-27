@@ -14,7 +14,6 @@ const getMomentDateAndTime = (days: number) => {
     time: hours,
   };
 };
-console.log("getCurrentDateAndTime(0): ", getCurrentDateAndTime(25));
 
 export const events = [
   {

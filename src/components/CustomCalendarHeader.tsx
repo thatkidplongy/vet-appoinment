@@ -1,12 +1,6 @@
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 import moment from "moment";
-import React, { useId, useReducer, useState } from "react";
-import AppointmentForm from "./AppointmentForm";
-import { VetsModel } from "@/interface/vets";
-import { FormDataModel } from "@/interface/appointments";
-import { EventsModel } from "@/interface/events";
-import { handleAppointments } from "@/services/handleAppointments";
-import { useEventReducer } from "@/hooks/useEventReducer";
+import React from "react";
 
 type MyCalendarProps = {
   label: string;

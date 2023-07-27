@@ -1,4 +1,4 @@
-import { Fragment, RefObject, useId, useRef, useState } from "react";
+import { Fragment, useId, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import SelectVeterinary from "./SelectVeterinary";
 import { getVets } from "@/services/sidebar";
@@ -130,7 +130,6 @@ export default function AppointmentForm(props: AppointmentFormProps) {
       updatedFormData,
     };
 
-    console.log(appointmentData);
     console.log(
       "Appointed Date and Time is",
       convertToUTC(updatedFormData.appointmentDate)

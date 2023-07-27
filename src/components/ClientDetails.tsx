@@ -1,14 +1,12 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { HeartIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { PencilIcon, PlusIcon } from "@heroicons/react/20/solid";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import {
   age,
   breed,
   calendar,
   clientAvatar,
-  clientDetailsAvatar,
   messages,
   phone,
   pin,
@@ -23,8 +21,6 @@ export default function ClientDetails(props) {
     handleDeleteEvent,
     handleOpenReschedForm,
   } = props;
-  //   const [open, setOpen] = useState(true);
-  console.log("clientDetails: ", clientDetails);
 
   return (
     <Transition.Root show={isClientDetailsOpen} as={Fragment}>

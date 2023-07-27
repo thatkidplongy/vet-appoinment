@@ -4,7 +4,6 @@ import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import CustomCalendarHeader from "./CustomCalendarHeader";
 import { EventsModel } from "@/interface/events";
-// import { events } from "@/definitions/events";
 import CardEventComponent from "./CardEventComponent";
 import { FormDataModel } from "@/interface/appointments";
 import { useEventReducer } from "@/hooks/useEventReducer";
@@ -77,7 +76,6 @@ const MyCalendar = (props: MyCalendarProps) => {
   };
 
   const handleSelect = (event: EventsModel) => {
-    console.log("event: ", event);
     setClientDetails(event);
     setIsClientDetailsOpen(true);
   };
@@ -133,7 +131,6 @@ const MyCalendar = (props: MyCalendarProps) => {
         }}
         eventPropGetter={eventPropGetter}
         onSelectEvent={(event) => handleSelect(event)}
-        // onSelectSlot={(event) =>handleOpenAppointmentForm(event)}
       />
       <ClientDetails
         isClientDetailsOpen={isClientDetailsOpen}

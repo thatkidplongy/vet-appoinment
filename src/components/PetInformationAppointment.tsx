@@ -57,7 +57,6 @@ const PetInformationAppointment = (props: PetInformationAppointmentProps) => {
         placeholder="Image"
         accept="image/*"
         name="image"
-        // value={formData.pet.image ?? ""}
         onChange={handleChange}
       />
     </div>
